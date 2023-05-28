@@ -1,7 +1,11 @@
-﻿# Chat to Learn the Capitals of the World
+﻿
+# AI Bot - Learn the Capitals of the World
 
-This bot is a simple AI Bot ( created using Bot Framework v4 ).  It runs locally and it help students learn the main cities and capitals of the world. 
-The bot provide the answers in English and Spanish but it doesn't do translation. 
+This AI Bot was created using Bot Framework v4.
+
+It runs locally and it is a "Teaching Assistant".  It helps students to learn and practice the capitals of the world. 
+
+The bot starts with a welcome message in in English and Spanish.  It accepts the name of the country to generate the capital.  It doesn't know anything else. 
 
 ## Language
 
@@ -9,6 +13,22 @@ The bot provide the answers in English and Spanish but it doesn't do translation
 - C#
 
 
-## To try this sample
-With Visual Studio run the project and  use the Bot Framework Emulator to test it.  The data is already in the project.  The latest capitals were downloaded from Simple Maps.com
 
+## See the AI Working 
+
+[Link to AI Demo ](https://docsinvestreusa.s3.amazonaws.com/SiteImages/AI_Bot_Demo.mp4)
+
+
+## Screenshots
+- AI Bot runs locally
+![AI Bots runs lilybot_runs_locally](https://docsinvestreusa.s3.amazonaws.com/SiteImages/lilybot_runs_locally.jpg)
+- Bot working
+![AI bot answers](https://docsinvestreusa.s3.amazonaws.com/SiteImages/Bot_working.jpg)
+- Case: no capital found
+![testing cases](https://docsinvestreusa.s3.amazonaws.com/SiteImages/Answer_no_capital.jpg)
+
+
+## To Run this AI Bot
+With Visual Studio run the project and use the Bot Framework Emulator to test it.  
+
+The data is already in the project.  The latest capitals were downloaded from Simple Maps.com

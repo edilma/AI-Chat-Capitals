@@ -20,7 +20,7 @@ namespace GeoFriend.Bots
             var cd = new CountryData(f);
             var cap = cd.GetCapital(name);
             var replyText = cap == null 
-                ? $"Sorry, I don't know the capital of {name}. /n Los siento, no se cual es la capital " 
+                ? $"Sorry, I don't know the capital of {name}. \r\n Los siento, no se cual es la capital de {name} " 
                 : $"The capital of {name} is {cap}!.";
             await turnContext.SendActivityAsync(replyText);
 
