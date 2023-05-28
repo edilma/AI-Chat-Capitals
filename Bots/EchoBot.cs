@@ -20,7 +20,7 @@ namespace GeoFriend.Bots
             var cd = new CountryData(f);
             var cap = cd.GetCapital(name);
             var replyText = cap == null 
-                ? $"Sorry, I don't know the capital of {name}." 
+                ? $"Sorry, I don't know the capital of {name}. /n Los siento, no se cual es la capital " 
                 : $"The capital of {name} is {cap}!.";
             await turnContext.SendActivityAsync(replyText);
 
@@ -28,7 +28,8 @@ namespace GeoFriend.Bots
 
         protected override async Task OnMembersAddedAsync(IList<ChannelAccount> membersAdded, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
         {
-            var welcomeText = "Hello There, my name is LilyBot.  I am your geography TA. Enter the name of a country/region and I will tell you its capital city ";
+            var welcomeText = "Hello, I am LilyBot.  I am your geography TA. Enter the name of a country/region and I will tell you its capital city  \r\n " +
+                "Hola, soy LilyBot.  Te voy a ensenar las capitales del mundo.  Escribe solamente el nombre de un pais o region";
             foreach (var member in membersAdded)
             {
                 if (member.Id != turnContext.Activity.Recipient.Id)
