@@ -1,7 +1,7 @@
 ﻿
 # AI Bot - Learn the Capitals of the World
 
-This AI Bot was created using Bot Framework v4.
+This AIBot was created using Bot Framework v4.
 
 It runs locally and it is a "Teaching Assistant".  It helps students to learn and practice the capitals of the world. 
 
